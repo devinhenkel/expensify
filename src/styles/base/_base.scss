@@ -1,0 +1,22 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    background: #fff;
+    font-family: $font-stack;
+    color: #333;
+    font-size: $text-size-medium;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+
