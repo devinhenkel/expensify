@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import AppRouter from './routes/AppRouter';
 import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
+import 'react-dates/initialize';
 
 import {addExpense, removeExpense, editExpense} from './actions/expensesActions';
 import expenseReducer from './reducers/expensesReducer';
@@ -27,9 +28,9 @@ expenseArray[1] = store.dispatch(addExpense({ description: 'Shoes', amount: 3000
 expenseArray[2] = store.dispatch(addExpense({ description: 'Butt bill', amount: 25, dateCreated: -1000 }));
 store.dispatch(setTextFilter(''));
 
-setTimeout(() => {
+/* setTimeout(() => {
     expenseArray[2] = store.dispatch(addExpense({ description: 'Sniffy whiffy', amount: 325, dateCreated: 750 }));
-  }, 5000);
+  }, 5000); */
 
 
 const jsx = (
