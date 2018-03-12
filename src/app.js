@@ -4,6 +4,8 @@ import AppRouter from './routes/AppRouter';
 import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
 import 'react-dates/initialize';
+import 'normalize.css/normalize.css';
+import './styles/styles.scss'
 import 'react-dates/lib/css/_datepicker.css';
 
 import {addExpense, removeExpense, editExpense} from './actions/expensesActions';
